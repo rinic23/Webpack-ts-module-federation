@@ -1,3 +1,4 @@
 export const App = () => {
-  return <h1>React typescript</h1>;
+  console.log(process.env.DB_HOST);
+  return <h1>React typescript222333</h1>;
 };
