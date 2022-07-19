@@ -11,7 +11,6 @@ module.exports = {
         test: /\.module\.s(a|c)ss$/,
         use: [
           'style-loader',
-          { loader: 'css-modules-typescript-loader' },
           {
             loader: 'css-loader',
             options: {
