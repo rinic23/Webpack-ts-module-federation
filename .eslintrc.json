@@ -44,6 +44,7 @@
     "no-confusing-arrow": "off",
     "indent": "off",
     "no-shadow": "off",
+    "import/no-extraneous-dependencies": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {

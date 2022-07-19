@@ -1,12 +1,56 @@
-const Dotenv = require("dotenv-webpack");
+const Dotenv = require('dotenv-webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: "production",
-  devtool: "source-map",
+  mode: 'production',
+  devtool: 'source-map',
+  module: {
+    rules: [
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      {
+        test: /\.module\.s(a|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-modules-typescript-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: false,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: false,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.s(a|c)ss$/,
+        exclude: /\.module.(s(a|c)ss)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: false,
+            },
+          },
+        ],
+      },
+    ],
+  },
   plugins: [
     new Dotenv({
-      path: "./enviroment/production.env",
+      path: './enviroment/production.env',
       safe: true,
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+      chunkFilename: '[id].[hash].css',
     }),
   ],
   performance: {
