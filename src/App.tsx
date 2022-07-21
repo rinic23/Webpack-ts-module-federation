@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import img from './Vector.svg';
 // import 'antd/dist/antd.css';
+// import 'antd/dist/antd.min.css';
 import style from './index.module.scss';
 
 export const App = () => (

@@ -8,12 +8,16 @@ module.exports = {
   resolve: {
     // говорим вебпаку что если не нашёл файл указанный в enty можешь
     // поискать в файлах с другими расширениями
-    extensions: ['.tsx', '.ts', '.js', '.scss'],
+    extensions: ['.tsx', '.ts', '.js', '.scss', '.css'],
   },
   module: {
     // говорим что babel-loader должен использовать загрузчик для всех
     // файлов в проекте кроме файлов из node-modules
     rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
@@ -27,10 +31,6 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
