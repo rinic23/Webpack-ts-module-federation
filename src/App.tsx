@@ -1,5 +1,7 @@
 import React from 'react';
+import { Button } from 'antd';
 import img from './Vector.svg';
+import 'antd/dist/antd.css';
 import style from './index.module.scss';
 
 export const App = () => (
@@ -8,5 +10,6 @@ export const App = () => (
     <div>
       <img className={style.red} src={img} alt="" />
     </div>
+    <Button> hi</Button>
   </div>
 );
