@@ -1,4 +1,3 @@
-const Dotenv = require('dotenv-webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -12,6 +11,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
+      // обрабатываем и минимизируем scss и module.scss
       {
         test: /\.module\.s(a|c)ss$/,
         use: [
@@ -45,13 +45,24 @@ module.exports = {
           },
         ],
       },
+
+      // обрабатываем и минимизируем css
+      {
+        test: /\.css$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+            },
+          },
+          'sass-loader',
+        ],
+      },
     ],
   },
   plugins: [
-    new Dotenv({
-      path: './enviroment/production.env',
-      safe: true,
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',

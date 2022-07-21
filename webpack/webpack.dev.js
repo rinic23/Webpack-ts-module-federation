@@ -1,4 +1,3 @@
-const Dotenv = require('dotenv-webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -7,6 +6,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
+      // обрабатываем scss  и scss module
       {
         test: /\.module\.s(a|c)ss$/,
         use: [
@@ -40,22 +40,14 @@ module.exports = {
           },
         ],
       },
+      // обрабатываем сss
       {
-        test: /\.less$/i,
-        use: [
-          // compiles Less to CSS
-          'style-loader',
-          'css-loader',
-          'less-loader',
-        ],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
-    new Dotenv({
-      path: './enviroment/development.env',
-      safe: true,
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
