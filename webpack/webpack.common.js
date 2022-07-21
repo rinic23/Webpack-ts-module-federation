@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   // указываем путь к корневому файлу нашего приложения
@@ -26,6 +27,10 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
