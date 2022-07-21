@@ -2,5 +2,10 @@
   background-color: red;
   width: 400px;
   height: 500px;
-  background: url('./Vector.svg');
+  // background: url('./Vector.svg');
+  color: var(--icon-accent);
+  font: var(--promo);
+  font-weight: bold;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
 }

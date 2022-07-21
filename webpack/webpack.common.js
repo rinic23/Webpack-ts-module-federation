@@ -22,16 +22,9 @@ module.exports = {
           },
         ],
       },
+
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]',
-          publicPath: '/',
-        },
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ttf|eot|woff|woff2)$/i,
         type: 'asset/resource',
       },
     ],

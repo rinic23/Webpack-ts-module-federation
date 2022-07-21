@@ -1,0 +1,124 @@
+:root {
+  /*Fonts*/
+  --promo: Inter, sans-serif;
+  --caption: 500 12px/16px Inter, sans-serif;
+  --button: 600 18px/22px Inter, sans-serif;
+  --title: 500 15px/20px Inter, sans-serif;
+  --subtitle: 500 13px/16px Inter, sans-serif;
+  --counter-large-bold: 600 16px/20px Inter, sans-serif;
+  --counter-medium-bold: 700 13px/16px Inter, sans-serif;
+  --menu-top: 500 14px/40px Inter, sans-serif;
+  --menu-collapse: 500 13px/18px Inter, sans-serif;
+
+  --h1: 700 32px/44px Inter, sans-serif;
+  --h2: 700 24px/36px Inter, sans-serif;
+  --h3: 600 20px/32px Inter, sans-serif;
+  --h3-28: 600 20px/28px Inter, sans-serif;
+
+  --body-xlarge-bold: 700 20px/32px Inter, sans-serif;
+  --body-xlarge-medium: 500 20px/32px Inter, sans-serif;
+  --body-xlarge-regular: 400 20px/32px Inter, sans-serif;
+
+  --body-large-bold: 700 16px/22px Inter, sans-serif;
+  --body-large-medium: 500 16px/22px Inter, sans-serif;
+  --body-large-regular: 400 16px/22px Inter, sans-serif;
+
+  --body-medium-bold: 700 14px/20px Inter, sans-serif;
+  --body-medium-medium: 500 14px/20px Inter, sans-serif;
+  --body-medium-regular: 400 14px/20px Inter, sans-serif;
+
+  --body-small-bold: 700 12px/16px Inter, sans-serif;
+  --body-small-medium: 500 12px/16px Inter, sans-serif;
+
+  --body-xsmall-bold: 700 10px/16px Inter, sans-serif;
+  --body-xsmall-medium: 500 10px/14px Inter, sans-serif;
+
+  /* Text colors */
+  --text-primary: #202128;
+  --text-secondary: #454854;
+  --text-tetriary: #6c727f;
+  --text-muted: #979faa;
+  --text-link-primary: #1866dc;
+  --text-link-secondary: #202128;
+  --text-success: #219748;
+  --text-warning: #ed4321;
+  --text-btn-white: #fff;
+  --text-key: #1866dc;
+
+  /* Icons colors */
+  --icon-primary: #808793;
+  --icon-primary-hover: #454854;
+  --icon-accent: #1866dc;
+  --icon-success: #219748;
+  --icon-warning: #ed4321;
+  --icon-white: #fff;
+  --icon-white-60: rgba(255, 255, 255, 0.6);
+  --icon-accent-60: rgba(24, 102, 220, 0.6);
+
+  /* Small elements colors */
+  --element-primary: #2b78ee;
+  --element-primary-light: rgba(43, 120, 238, 0.1);
+  --element-success: #3abb65;
+  --element-success-light: rgba(58, 187, 101, 0.1);
+  --element-error: #f95639;
+  --element-warning: #fa9405;
+  --element-white: #fff;
+  --element-neutral-light: rgba(32, 33, 40, 0.05);
+  --element-neutral: #d7dbe0;
+
+  /* Separator colors */
+  --border-accent: #2b78ee;
+  --border-success: #3abb65;
+  --border-error: #f95639;
+  --border-key: #2b78ee;
+  --border-cta: #2b78ee;
+
+  --black-border-80: rgba(32, 33, 40, 0.8);
+  --black-border-40: rgba(32, 33, 40, 0.4);
+  --black-border-20: rgba(32, 33, 40, 0.2);
+  --black-border-10: rgba(32, 33, 40, 0.1);
+
+  --white-border-80: rgba(255, 255, 255, 0.8);
+  --white-border-40: rgba(255, 255, 255, 0.4);
+  --white-border-20: rgba(255, 255, 255, 0.2);
+  --white-border-10: rgba(255, 255, 255, 0.1);
+
+  /* Colors for buttons and cta */
+  --cta-primary-default: #2b78ee;
+  --cta-primary-hover: #388cfa;
+  --cta-primary-pressed: #1866dc;
+  --cta-secondary-default: #fff;
+  --cta-secondary-hover: #e5f0ff;
+  --cta-secondary-pressed: #c2dcff;
+  --cta-primary-disabled: #979faa;
+  --cta-secondary-disabled: #e9eaed;
+  --cta-success-default: #3abb65;
+  --cta-success-hover: #4ccd77;
+  --cta-success-light: #e9fcee;
+  --cta-warning-default: #fa9405;
+  --cta-warning-hover: #ffa51f;
+  --cta-warning-light: #ffecdb;
+  --cta-error-default: #f95639;
+  --cta-error-hover: #fe6b4d;
+  --cta-error-light: #ffebe5;
+
+  /* Background color */
+  --bg-white: #fff;
+  --bg-primary: #f7f7f8;
+  --bg-secondary: #e9eaed;
+  --bg-tetriary: #d7dbe0;
+  --bg-main-light: #e5f0ff;
+  --warning-light: #ffebe5;
+  --success-light: #e9fcee;
+
+  /* Chart colors */
+  --chart-red: #fe6b4d;
+  --chart-orange: #ffa51f;
+  --chart-yellow: #ffd60a;
+  --chart-green: #4ccd77;
+  --chart-blue: #388cfa;
+  --chart-purple: #8868df;
+
+  /* Overlay fill */
+  --overlay-fill: rgba(32, 33, 40, 0.4);
+}
