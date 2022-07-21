@@ -1,6 +1,3 @@
-// eslint-disable-next-line import/no-import-module-exports
-import '@styles/antd.less';
-
 const Dotenv = require('dotenv-webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
