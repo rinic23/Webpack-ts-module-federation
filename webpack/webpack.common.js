@@ -10,6 +10,9 @@ module.exports = {
     // говорим вебпаку что если не нашёл файл указанный в enty можешь
     // поискать в файлах с другими расширениями
     extensions: ['.tsx', '.ts', '.js', '.scss', '.css'],
+    alias: {
+      shared: path.resolve(__dirname, '..', 'src/shared'),
+    },
   },
   module: {
     // говорим что babel-loader должен использовать загрузчик для всех
