@@ -6,6 +6,7 @@ module.exports = {
   // указываем путь к корневому файлу нашего приложения
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
+    preferRelative: true,
     // говорим вебпаку что если не нашёл файл указанный в enty можешь
     // поискать в файлах с другими расширениями
     extensions: ['.tsx', '.ts', '.js', '.scss', '.css'],
