@@ -6,4 +6,4 @@ export const MainPage = () => (
   <div>
     <Link to={routes.breackingBad}>Breacking Bad</Link>
   </div>
-);
+  );

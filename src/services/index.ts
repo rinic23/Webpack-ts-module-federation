@@ -1,0 +1,1 @@
+export { BreackingBadService } from './breackingBad';

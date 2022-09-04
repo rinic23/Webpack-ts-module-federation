@@ -12,6 +12,8 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.scss', '.css'],
     alias: {
       shared: path.resolve(__dirname, '..', 'src/shared'),
+      hooks: path.resolve(__dirname, '..', 'src/hooks'),
+      services: path.resolve(__dirname, '..', 'src/services'),
     },
   },
   module: {

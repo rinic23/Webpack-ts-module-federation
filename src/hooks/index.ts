@@ -1,0 +1,1 @@
+export { useGetСharacters } from './breackingBad';
