@@ -1,0 +1,11 @@
+.breacking_bad_list {
+  display: grid;
+  height: 100%;
+  .cards_wrapper {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 288px);
+    gap: 20px;
+  }
+}

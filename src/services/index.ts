@@ -1,1 +1,1 @@
-export { BreackingBadService } from './breackingBad';
+export * as BreackingBadService from './breackingBad';

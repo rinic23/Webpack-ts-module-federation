@@ -2,8 +2,8 @@ import { useQuery } from 'react-query';
 import { BreackingBadService } from 'services';
 
 export const useGetСharacters = () => {
-  const { isLoading, data } = useQuery('getBreackingBadСharacters', () =>
-    BreackingBadService.getСharacters(),
+  const { data, ...otherData } = useQuery('getBreackingBadСharacters', () =>
+    BreackingBadService.BreackingBadEndPoints.getСharacters(),
   );
-  return { isLoading, data: data?.data };
+  return { ...otherData, data: data?.data };
 };

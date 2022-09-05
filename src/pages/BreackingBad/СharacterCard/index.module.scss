@@ -1,0 +1,21 @@
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--black-border-20);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2, 1.2);
+    background-color: var(--bg-primary);
+  }
+  img {
+    width: 100%;
+    height: 90%;
+  }
+  .card_info {
+    display: grid;
+    gap: 10px;
+  }
+}

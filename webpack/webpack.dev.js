@@ -2,7 +2,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
-
+  devServer: {
+    port: 8080,
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' },

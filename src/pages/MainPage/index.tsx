@@ -4,6 +4,6 @@ import { routes } from 'shared';
 
 export const MainPage = () => (
   <div>
-    <Link to={routes.breackingBad}>Breacking Bad</Link>
+    <h1>Главная страница</h1>
   </div>
-  );
+);
