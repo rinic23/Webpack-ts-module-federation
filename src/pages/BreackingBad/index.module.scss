@@ -8,4 +8,11 @@
     grid-template-columns: repeat(auto-fit, 288px);
     gap: 20px;
   }
+  .spinner {
+    align-self: center;
+  }
+  .pagination_wrapper {
+    justify-self: center;
+    padding-top: 50px;
+  }
 }

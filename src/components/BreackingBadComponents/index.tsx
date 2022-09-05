@@ -1,1 +1,1 @@
-export {};
+export { СharacterCard } from './СharacterCard';
